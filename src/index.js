@@ -6,19 +6,15 @@ const loader = {
             console.log(...args);
         }
     },
-    install(Vue, options) {
-        if (options === undefined) {
-            options = {};
-        }
+    install(Vue, options = {}) {
 
-        let opts = Object.assign(options,{
+        this.options = Object.assign({
             dir:'./components',
             logging: true
-        });
+        }, options);
 
-        this.logging = opts.logging;
 
-        const files = require.context(opts.dir, true, /\.vue$/i);
+        const files = require.context(this.options.dir, true, /\.vue$/i);
         files.keys().map(key => {
             let name = _.kebabCase(key.split('/').pop().split('.')[0]);
             let component = files(key).default;
