@@ -1,6 +1,6 @@
 {
   "name": "vue-component-autoload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -19,10 +19,8 @@
     "url": "https://github.com/braceyourself/vue-component-autoload/issues"
   },
   "homepage": "https://github.com/braceyourself/vue-component-autoload#readme",
-
-  "dependencies":{
-    "vue":"^2.5.17",
-    "lodash":"^4.17.5"
+  "dependencies": {
+    "vue": "^2.5.17",
+    "lodash": "^4.17.5"
   }
-
 }
