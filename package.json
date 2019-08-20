@@ -21,14 +21,11 @@
   },
   "homepage": "https://github.com/braceyourself/vue-component-autoload#readme",
   "dependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "lodash": "^4.17.15",
-    "vue-template-compiler": "^2.6.10"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "babel-loader": "^8.0.6",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
