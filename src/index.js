@@ -6,9 +6,8 @@ const loader = {
             dir:'./components',
         });
 
-        let component_directory = opts.dir;
 
-        const files = require.context(component_directory, true, /\.vue$/i);
+        const files = require.context(opts.dir, true, /\.vue$/i);
         files.keys().map(key => {
             let name = _.kebabCase(key.split('/').pop().split('.')[0]);
             let component = files(key).default;
