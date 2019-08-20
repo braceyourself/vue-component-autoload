@@ -2,6 +2,7 @@ import _ from 'lodash'
 
 const loader = {
     install(Vue, options) {
+
         let opts = Object.assign(options,{
             dir:'./components',
         });
