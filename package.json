@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/braceyourself/vue-component-autoload#readme",
   "dependencies": {
+    "lodash": "^4.17.5",
     "vue": "^2.5.17",
-    "lodash": "^4.17.5"
+    "vue-template-compiler": "^2.6.10"
   }
 }
